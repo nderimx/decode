@@ -27,7 +27,7 @@ func main() {
 		decodedInput = []byte(decodedString)
 	}
 	switch outputEncoding {
-	case "unicode", "string", "utf8", "utf-8":
+	case "string", "bytes", "blob", "byte_array":
 		fmt.Println(string(decodedInput))
 	case "b64", "base64":
 		output := b64.StdEncoding.EncodeToString(decodedInput)
