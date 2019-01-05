@@ -14,7 +14,7 @@ func main() {
 	fmt.Printf("Bytes: %v\n %v \n\n", len([]byte(s)), []byte(s))
 	var strs []rune
 	for _, c := range s {
-		// unicode representation without U+ prefix,
+		// unicode code point without U+ prefix,
 		// more specifically utf-32, since a rune is an int32
 		strs = append(strs, c)
 	}
